@@ -1,0 +1,6 @@
+framework module Pods_AppcentWeatherApp {
+  umbrella header "Pods-AppcentWeatherApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

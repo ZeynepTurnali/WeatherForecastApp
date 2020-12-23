@@ -1,8 +1,29 @@
-//
+
 //  WeatherDataModel.swift
 //  AppcentWeatherApp
-//
-//  Created by testinium on 17.12.2020.
-//
+
 
 import Foundation
+
+struct WeatherDataModel : Decodable {
+    
+    let title: String
+    let locationType: String
+    let latLong: String
+    let woeid: Int
+    let distance: Int?
+
+    
+    enum CodingKeys: String, CodingKey {
+        case title = "title"
+        case locationType = "location_type"
+        case latLong = "latt_long"
+        case woeid = "woeid"
+        case distance = "distance"
+    }
+    
+}
+
+
+
+
